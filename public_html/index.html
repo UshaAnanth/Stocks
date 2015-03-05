@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="StockChart">
+
+    <head>
+        <title> Angular JS Controller  </title>
+
+        <!-- JavaScript files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src= "app.js"></script>
+        <script src= "vendor/d3.min.js"></script>
+        <script src= "services/service.js"></script>
+        <script src= "controllers/controller.js"></script>
+        <script src= "controllers/parser.js"></script>
+
+
+        <!-- Style Sheets -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    </head>
+
+
+    <body  ng-controller="GolbalPerfController" >
+        <div class="container"> <!-- Bootstrap Container -->
+            <!-- <div ng-include="'displayTable.html'"></div> -->
+            <!-- or  use custom directive -->
+            <display-table></display-table>
+        </div>
+       
+    </body>
+</html>
